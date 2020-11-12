@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "closure #2 in closure #1 in WeatherViewModel.getData(completion:):ViewModel.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "print(self.retrieve())">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.location():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "print(CLLocationManager.authorizationStatus.rawValue)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "WeatherViewModel.tempDate(indexPath:):ViewModel.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "print(Date(timeIntervalSince1970: TimeInterval(dt / 1000))">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.locationManager(_:didChangeAuthorization:):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
