@@ -1,0 +1,11 @@
+1. When the user is asked for permission to allow location
+    a. If Allow Once is clicked
+         Every time when the user has relaunched the app the allow location must be prompted.
+    b. If Allow Always is clicked
+        Nothing must be done. But the app must update the weather data.
+    c. If Don't Allow is clicked.
+        Everytime popup a dialogue to allow location.
+2. Check the data is coming for the correct location or know.
+3. Check if the city is not coming in data, set the latitude and longitude instead.
+4. All 16 days forecasts are available or not.
+5. Refresh button must work.
