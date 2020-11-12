@@ -16,6 +16,9 @@
 		180DB2D3255BC1D10021C626 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180DB2D1255BC1D10021C626 /* LaunchScreen.storyboard */; };
 		180DB2DE255BC1D20021C626 /* WeatherTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DB2DD255BC1D20021C626 /* WeatherTrackerTests.swift */; };
 		180DB2E9255BC1D20021C626 /* WeatherTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DB2E8255BC1D20021C626 /* WeatherTrackerUITests.swift */; };
+		180DB2FD255C2C170021C626 /* Temp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DB2FC255C2C160021C626 /* Temp.swift */; };
+		180DB305255C4C450021C626 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DB304255C4C450021C626 /* APIClient.swift */; };
+		180DB30A255C4EFA0021C626 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DB309255C4EFA0021C626 /* WeatherViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		180DB2E4255BC1D20021C626 /* WeatherTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		180DB2E8255BC1D20021C626 /* WeatherTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTrackerUITests.swift; sourceTree = "<group>"; };
 		180DB2EA255BC1D20021C626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		180DB2FC255C2C160021C626 /* Temp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temp.swift; sourceTree = "<group>"; };
+		180DB304255C4C450021C626 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		180DB309255C4EFA0021C626 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +107,12 @@
 		180DB2C2255BC1C70021C626 /* WeatherTracker */ = {
 			isa = PBXGroup;
 			children = (
-				180DB2C3255BC1C70021C626 /* AppDelegate.swift */,
-				180DB2C5255BC1C70021C626 /* SceneDelegate.swift */,
-				180DB2C7255BC1C70021C626 /* ViewController.swift */,
-				180DB2C9255BC1C70021C626 /* Main.storyboard */,
-				180DB2CF255BC1D10021C626 /* Assets.xcassets */,
-				180DB2D1255BC1D10021C626 /* LaunchScreen.storyboard */,
 				180DB2D4255BC1D10021C626 /* Info.plist */,
-				180DB2CC255BC1C70021C626 /* WeatherTracker.xcdatamodeld */,
+				180DB35A255CF8C60021C626 /* APIService */,
+				180DB359255CF8B20021C626 /* Model */,
+				180DB34F255C924C0021C626 /* ViewModel */,
+				180DB34E255C92440021C626 /* Controller */,
+				180DB35E255CF9080021C626 /* Support Files */,
 			);
 			path = WeatherTracker;
 			sourceTree = "<group>";
@@ -129,6 +133,51 @@
 				180DB2EA255BC1D20021C626 /* Info.plist */,
 			);
 			path = WeatherTrackerUITests;
+			sourceTree = "<group>";
+		};
+		180DB34E255C92440021C626 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				180DB2C7255BC1C70021C626 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		180DB34F255C924C0021C626 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				180DB309255C4EFA0021C626 /* WeatherViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		180DB359255CF8B20021C626 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				180DB2FC255C2C160021C626 /* Temp.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		180DB35A255CF8C60021C626 /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+				180DB304255C4C450021C626 /* APIClient.swift */,
+			);
+			path = APIService;
+			sourceTree = "<group>";
+		};
+		180DB35E255CF9080021C626 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				180DB2C3255BC1C70021C626 /* AppDelegate.swift */,
+				180DB2C5255BC1C70021C626 /* SceneDelegate.swift */,
+				180DB2C9255BC1C70021C626 /* Main.storyboard */,
+				180DB2CF255BC1D10021C626 /* Assets.xcassets */,
+				180DB2D1255BC1D10021C626 /* LaunchScreen.storyboard */,
+				180DB2CC255BC1C70021C626 /* WeatherTracker.xcdatamodeld */,
+			);
+			path = "Support Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +314,9 @@
 				180DB2C4255BC1C70021C626 /* AppDelegate.swift in Sources */,
 				180DB2C6255BC1C70021C626 /* SceneDelegate.swift in Sources */,
 				180DB2CE255BC1C70021C626 /* WeatherTracker.xcdatamodeld in Sources */,
+				180DB2FD255C2C170021C626 /* Temp.swift in Sources */,
+				180DB305255C4C450021C626 /* APIClient.swift in Sources */,
+				180DB30A255C4EFA0021C626 /* WeatherViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,7 +498,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.WeatherTracker.ios.WeatherTracker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.WeatherTracker.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -464,7 +516,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.WeatherTracker.ios.WeatherTracker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.WeatherTracker.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
